@@ -9,6 +9,7 @@
 
     <div class="body">
         <img src="{{$news->getThumbnail()}}"/>
+        <p>{{$news->content}}</p>
     </div>
 </div>
 
