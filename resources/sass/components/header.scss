@@ -1,0 +1,103 @@
+header {
+    font-family: 'Work Sans', sans-serif;
+    position: fixed;
+    width: -webkit-fill-available;
+    display: flex;
+    transition: all 0.5s;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: $mobile) {
+        padding: $y-t-p-header $x-p-header 0 $x-p-header;
+    }
+    padding: 20px 0 0 20px;
+    /* LOGO */
+    .left {
+        display: flex;
+        flex-direction:row ;
+        align-items: center;
+        img {
+            width: 60px;
+            margin-right: 10px;
+        }
+        a {
+            font-size: 20px;
+            font-weight: 300;
+            text-decoration: none;
+            letter-spacing: 2px;
+            color: white;
+        }
+    }
+    /* MENU */
+    .right {
+        ul {
+            @media (max-width: $mobile) {
+                transition: 1s all;
+                position: absolute;
+                flex-direction: column;
+                margin-top: 34px;
+                padding-top: 8px;
+                height: 0px;
+                overflow-y: hidden;
+                right: 40px;
+                align-items: flex-end;
+                li {
+                    margin-right: 0 !important;
+                    font-size: 18px;
+                    margin-bottom: 8px;
+                    &.active, &:hover {
+                        padding-left: 10px;
+                        border-left: 2px solid white;
+                    }
+                }
+                &.active {
+                    height: 150px;
+                }
+            }
+            display: flex;
+            flex-direction: row;
+            li {
+                margin-right: 30px;
+                text-transform: uppercase;
+                a {
+                    color: white;
+                }
+                @media (min-width: $mobile) {
+                    &.active, &:hover {
+                        border-bottom: 2px solid white;
+                    }
+                }
+            }
+
+        }
+        button {
+            @media (min-width: $mobile) {
+                display: none;
+            }
+             display: block;
+             margin: 0 40px 0 0;
+         }
+    }
+
+    /*SCROLLED NAVBAR*/
+    &.navbar {
+        z-index: 2;
+        background-color: white;
+        @media (min-width: $mobile) {
+            padding: 5px $x-p-header / 2 5px  $x-p-header / 2;
+        }
+        a, li a {
+            color: black !important;
+        }
+        li {
+            &:hover, &.active {
+                border-bottom: 1px solid black !important;
+            }
+        }
+        button {
+            background-color: black;
+            color: white;
+        }
+        box-shadow: 1px 1px 20px 1px #0000008a;
+        padding: 20px 0 20px 20px;
+    }
+}
