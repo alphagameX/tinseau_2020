@@ -15,7 +15,8 @@ class Article extends Model
         return $this->belongsTo(User::class, 'author', 'id');
     }
 
-    public function getThumbnail() {
+    public function getThumbnail(): string
+    {
         return env('APP_URL') . '/storage/' . $this->getAttribute('thumbnail');
     }
 

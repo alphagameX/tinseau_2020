@@ -9,8 +9,11 @@
 
     <div class="body">
         <img src="{{$news->getThumbnail()}}"/>
-        <p>{{$news->content}}</p>
+        <div class="content">{!! $news->content !!}</div>
     </div>
 </div>
 
-<x-footer/>>
+
+<x-lastNews :excepted="$news->id"/>
+
+<x-footer/>

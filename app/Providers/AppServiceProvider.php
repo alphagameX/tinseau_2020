@@ -2,8 +2,11 @@
 
 namespace App\Providers;
 
+use App\FormField\Builder;
 use App\Models\Prestation;
 use App\Observers\PrestationObserver;
+
+use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -15,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        Voyager::addFormField(Builder::class);
     }
 
     /**

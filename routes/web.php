@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\SearchController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,7 +23,9 @@ Route::get('/prestation/{slug}', [PageController::class, 'prestation'])->name('p
 Route::post('/search', [SearchController::class, 'getArticle'])->name('search');
 Route::get('/news/{id}', [PageController::class, 'news'])->name('news');
 
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+    /*Route::get('asset/{file}', [AdminController::class, 'asset'])->name('asset');*/
 });
 

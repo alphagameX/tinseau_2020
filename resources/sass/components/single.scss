@@ -22,6 +22,7 @@
     .content {
         margin: 0 30px 0 30px;
         font-size: 20px;
+        padding: 40px;
         ul {
             li {
                 margin-left: 60px;
@@ -53,11 +54,14 @@
         margin-top: 50px;
         width: 100%;
         display: flex;
-        justify-content: center;
-
+        flex-direction: column;
+        align-items: center;
         img {
             width: 100%;
             max-width: 800px;
+        }
+        .content {
+            margin-top: 100px;
         }
     }
 }

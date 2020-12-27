@@ -199,3 +199,99 @@
         }
     }
 }
+
+
+.last-news {
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    > h1:first-of-type {
+        font-size: 45px;
+        margin-bottom: 10px;
+    }
+
+    > a {
+        color: black;
+       h1 {
+           text-align: right;
+           margin-top: 8px;
+           font-size: 16px;
+       }
+        &:hover {
+            color: grey;
+        }
+    }
+
+    @supports(display: grid) {
+
+        .grid-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .grid-item {
+            grid-area: main;
+            padding: 0;
+            overflow: hidden;
+        }
+
+
+        .items {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            will-change: transform;
+            user-select: none;
+            cursor: pointer;
+        }
+
+        .items.active {
+            cursor: grabbing;
+            cursor: -webkit-grabbing;
+            transform: scale(1);
+        }
+
+        .item {
+            margin-right: 15px;
+            color: white;
+            position: relative;
+            width: 400px;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: inline-block;
+            background-color: black;
+            .date {
+                color: grey;
+                position: absolute;
+                top: 10px;
+                right: 18px;
+            }
+
+            > div {
+                position: absolute;
+                width: 360px;
+                bottom: 20px;
+                left: 20px;
+                p {
+                    color: #00000099;
+                    font-weight: 700;
+                }
+                a h1 {
+                    color: white;
+                    width: 100%;
+                    font-size: 24px;
+                    white-space: break-spaces;
+                }
+            }
+
+        }
+    }
+
+}
