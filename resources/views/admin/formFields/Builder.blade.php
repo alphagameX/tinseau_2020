@@ -1,3 +1,4 @@
 <div id="editorjs"></div>
 
-<script src="{{asset('/js/admin/admin.js')}}"></script>
+<button class="save_editor">Save</button>
+<script src="{{asset('/js/admin.js')}}"></script>
