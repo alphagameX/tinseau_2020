@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68516d0c-3b84-4fbc-ac9a-c642ead32554" name="Default Changelist" comment="syncro" />
+    <list default="true" id="68516d0c-3b84-4fbc-ac9a-c642ead32554" name="Default Changelist" comment="new db" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -299,7 +299,7 @@
       <workItem from="1609144593300" duration="343000" />
       <workItem from="1609168903083" duration="368000" />
       <workItem from="1609169613621" duration="1518000" />
-      <workItem from="1609171224557" duration="7981000" />
+      <workItem from="1609171224557" duration="8146000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm commit">
       <created>1609019187434</created>
@@ -329,7 +329,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609425935858</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new db">
+      <created>1609427946007</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609427946007</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +358,8 @@
     <MESSAGE value="phpstorm commit" />
     <MESSAGE value="news pre final" />
     <MESSAGE value="syncro" />
-    <option name="LAST_COMMIT_MESSAGE" value="syncro" />
+    <MESSAGE value="new db" />
+    <option name="LAST_COMMIT_MESSAGE" value="new db" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
