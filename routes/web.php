@@ -23,6 +23,10 @@ Route::get('/prestation/{slug}', [PageController::class, 'prestation'])->name('p
 Route::post('/search', [SearchController::class, 'getArticle'])->name('search');
 Route::get('/news/{id}', [PageController::class, 'news'])->name('news');
 
+Route::get('/circuit', [PageController::class, 'circuits'])->name('circuits');
+Route::get('/circuit/{slug}', [PageController::class, 'circuit'])->name('circuit');
+
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
     Route::post('upload-custom', [AdminController::class, 'upload'])->name('upload');

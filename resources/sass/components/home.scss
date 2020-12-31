@@ -18,7 +18,7 @@
                 max-width: none;
             }
             z-index: 1;
-            margin-left: $x-p-header;
+            margin-left: 10%;
             width: 100%;
             min-width: 450px;
             max-width: 550px;
@@ -54,7 +54,7 @@
                 button:first-of-type {
                     margin-right: 10px;
                 }
-                button:last-of-type {
+                .circuit button {
                     background: none;
                     border: 2px solid white;
                     padding: 8px 28px 8px 28px;

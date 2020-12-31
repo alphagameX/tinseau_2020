@@ -30,4 +30,19 @@ class PageController extends Controller
             'news' => $news
         ));
     }
+
+
+    // circuit route
+    public function circuits() {
+        return view('circuit', array(
+            'title' => 'Nos circuits'
+        ));
+    }
+    public function circuit($slug) {
+        return $slug;
+    }
+
+
+
+
 }

@@ -12,7 +12,7 @@
 
 <header>
    <div class="left">
-       <img src="/storage/utils/logo/Casque3.png">
+       <img src="/storage/logo/Casque3.png">
        <a href="/">Tinseau</a>
    </div>
 

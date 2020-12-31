@@ -1,0 +1,63 @@
+.circuits {
+    font-family: 'Work Sans', sans-serif;
+    padding-top: 150px;
+    @media(min-width: $small) {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .circuit-container {
+        width: 100%;
+        .circuit-item {
+            margin: 0 8px 50px 8px;
+            @media (min-width: $post-mobile) {
+                display: flex;
+                img {
+                    height: 355px;
+                    width: 250px;
+                    object-fit: cover;
+                }
+            }
+            @media (max-width: $post-mobile) {
+                img {
+                    height: 255px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                > div {
+                    > p {
+                        padding: 20px 0 20px 0;
+                    }
+                }
+            }
+            img {
+                border-radius: 5px;
+            }
+            > div {
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h1 {
+                    font-size: 40px;
+                    text-transform: uppercase;
+                    color: $green-theme;
+                }
+                > div {
+                    display: flex;
+                    button {
+                        color: $green-theme;
+                        border: 2px solid $green-theme;
+                        margin-left: 60px;
+                    }
+                    span {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -8,11 +8,14 @@
             <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux</p>
             <div>
                 <button>s'inscrire</button>
-                <button>Voir les autres journées</button>
+                <a href="{{route('circuits')}}" class="circuit">
+                    <button>Voir les autres journées</button>
+                </a>
+
             </div>
         </div>
         <div class="right">
-            <img src="storage/utils/background/home.png">
+            <img src="storage/logo/porsches.png">
         </div>
     </div>
 

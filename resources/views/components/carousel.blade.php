@@ -1,11 +1,10 @@
 <div class="carousel" data-delay="{{$delay}}">
     <div class="carousel-container">
-        <img src="storage/utils/background/voiture1.jpg">
-        <img src="storage/utils/background/voiture2.jpg">
-        <img src="storage/utils/background/voiture3.jpg">
-        <img src="storage/utils/background/voiture4.jpg">
-        <img src="storage/utils/background/voiture5.jpg">
-        <img src="storage/utils/background/voiture6.jpg">
+        <img src="storage/placeholder/voiture1.jpg">
+        <img src="storage/placeholder/voiture2.jpg">
+        <img src="storage/placeholder/voiture3.jpg">
+        <img src="storage/placeholder/voiture4.jpg">
+        <img src="storage/placeholder/voiture5.jpg">
     </div>
 
     <div class="pills"></div>
