@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="68516d0c-3b84-4fbc-ac9a-c642ead32554" name="Default Changelist" comment="news pre final">
-      <change afterPath="$PROJECT_DIR$/resources/sass/components/circuit.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/circuit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/admin.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_var.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_var.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/components/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/components/home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/components/single.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/components/single.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/carousel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/carousel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="68516d0c-3b84-4fbc-ac9a-c642ead32554" name="Default Changelist" comment="syncro" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -318,7 +299,7 @@
       <workItem from="1609144593300" duration="343000" />
       <workItem from="1609168903083" duration="368000" />
       <workItem from="1609169613621" duration="1518000" />
-      <workItem from="1609171224557" duration="7815000" />
+      <workItem from="1609171224557" duration="7981000" />
     </task>
     <task id="LOCAL-00001" summary="phpstorm commit">
       <created>1609019187434</created>
@@ -341,7 +322,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609144872150</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="syncro">
+      <created>1609425935858</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609425935858</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +350,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="phpstorm commit" />
     <MESSAGE value="news pre final" />
-    <option name="LAST_COMMIT_MESSAGE" value="news pre final" />
+    <MESSAGE value="syncro" />
+    <option name="LAST_COMMIT_MESSAGE" value="syncro" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
