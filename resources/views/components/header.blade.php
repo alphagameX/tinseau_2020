@@ -15,26 +15,14 @@
        <img src="/storage/logo/Casque3.png">
        <a href="/">Tinseau</a>
    </div>
-
     <div class="right">
-        <ul>
-            <li class="active">
-                <a href="#">Home</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Service</a>
-            </li>
-            <li>
-                <a href="#">News</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-        <button>Menu</button>
+        <button>
+            Menu <i class="fas fa-bars"></i>
+        </button>
     </div>
 </header>
+
+<x-overlay/>
+<x-user/>
+
 

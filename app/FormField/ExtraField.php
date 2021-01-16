@@ -4,14 +4,11 @@ namespace App\FormField;
 
 use TCG\Voyager\FormFields\AbstractHandler;
 
-class Builder extends AbstractHandler {
-
+class ExtraField extends AbstractHandler {
     public function createContent($row, $dataType, $dataTypeContent, $options)
     {
-        return view('admin.formFields.Builder', array(
+        return view('admin.ExtraField',array(
             'row' => $row,
-            'options' => $options,
-            'dataType' => $dataType,
             'dataTypeContent' => $dataTypeContent
         ));
     }

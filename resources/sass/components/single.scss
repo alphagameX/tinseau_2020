@@ -90,3 +90,23 @@
         }
     }
 }
+
+.single-event {
+    padding-top: 140px;
+    .event {
+        padding: 20px;
+        font-family: 'Staatliches', cursive;
+        > h1 {
+            font-size: 60px;
+            @media (max-width: $pre-mobile) {
+                font-size: 50px;
+            }
+            @media (max-width: $mobile) {
+                font-size: 35px;
+            }
+        }
+    }
+    .cart {
+
+    }
+}

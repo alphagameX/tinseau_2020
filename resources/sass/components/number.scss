@@ -1,0 +1,18 @@
+.number {
+    width: fit-content;
+    display: flex;
+    margin-left: auto;
+    position: relative;
+    margin-right: 10px;
+    margin-top: 10px;
+    justify-content:space-around;
+    img {
+        width: 20px;
+        margin-left: 8px;
+    }
+    p {
+        position: absolute;
+        right: 0;
+        bottom: -25px;
+    }
+}

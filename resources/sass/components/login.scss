@@ -1,0 +1,100 @@
+.auth-page {
+    font-family: 'Work Sans', sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url("/storage/utils/background/login.jpg");
+    align-items: center;
+    .login {
+        background-color: #f9f9f9;
+        max-width: 600px;
+        width: 100%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .header {
+            background: $green-theme;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #8080804d;
+            font-size: 20px;
+            > p:first-child {
+                font-size: 30px;
+                padding-bottom: 20px;
+            }
+            > p:last-child {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+       form {
+           height: 100%;
+           width: 100%;
+           margin-top: 100px;
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           > p {
+               margin-bottom: 10px;
+               font-weight: bold;
+               color: $green-theme;
+           }
+           input {
+               text-indent: 20px;
+               height: 45px;
+               width: 70%;
+               margin: 10px 20px 10px 20px;
+               border: none;
+               font-size: 18px;
+               &:focus {
+                   outline: none;
+               }
+           }
+           .submit {
+               margin-top: auto;
+               margin-bottom: 90px;
+               button {
+                   font-size: 18px;
+                   background-color: $green-theme;
+                   color: white;
+                   i {
+                       margin-left: 10px;
+                   }
+               }
+           }
+       }
+    }
+}
+
+/*COMPTE CLIENT PASTILLE*/
+
+.account {
+    z-index: 10;
+    background-color: #dcdcdc;
+    font-size: 25px;
+    position: fixed;
+    right: 0;
+    top: 120px;
+
+    &:hover {
+        i {
+            padding-right: 50px;
+        }
+    }
+    i {
+        color: $green-theme;
+        cursor: pointer;
+        transition: padding-right 0.5s;
+        padding: 8px 20px 8px 8px;
+    }
+}
+
+
+

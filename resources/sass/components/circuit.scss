@@ -1,22 +1,48 @@
 .circuits {
     font-family: 'Work Sans', sans-serif;
-    padding-top: 150px;
-    @media(min-width: $small) {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
+    .circuit-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $green-theme;
+        h1 {
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 20px;
+            color: white;
+            font-size: 80px;
+            text-transform: uppercase;
+            i {
+                margin-left: 10px;
+                font-size: 70px;
+            }
+        }
+        p {
+            width: 50%;
+            color: white;
+            padding-bottom: 50px;
+        }
+    }
     .circuit-container {
-        width: 100%;
+        padding-top: 50px;
+        @media(min-width: $mobile) {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
         .circuit-item {
-            margin: 0 8px 50px 8px;
+            &:not(:last-child) {
+                border-bottom: 2px solid #4467643b;
+            }
+            margin: 0 8px 25px 8px;
+            padding-bottom: 25px;
             @media (min-width: $post-mobile) {
                 display: flex;
                 img {
-                    height: 355px;
                     width: 250px;
                     object-fit: cover;
                 }
@@ -46,15 +72,46 @@
                     text-transform: uppercase;
                     color: $green-theme;
                 }
-                > div {
+                .next-event {
+                    margin-top: 15px;
+                    > h1 {
+                        font-size: 18px;margin-bottom: 15px;
+                    }
+                    ul {
+                        padding-left: 20px;
+                        li {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            padding-top: 10px;
+                            padding-bottom: 10px;
+                            > div {
+                                p:first-of-type {
+                                    font-size: 18px;
+                                    font-style: italic;
+                                }
+                            }
+                            button {
+                                color: $green-theme;
+                                border: 2px $green-theme solid;
+                            }
+                        }
+                    }
+
+                }
+                .no-event {
                     display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        color: grey;
+                    }
                     button {
+                        margin-top: 20px;
                         color: $green-theme;
                         border: 2px solid $green-theme;
-                        margin-left: 60px;
-                    }
-                    span {
-                        font-weight: bold;
                     }
                 }
             }

@@ -1,0 +1,139 @@
+.event-list {
+    padding-top: 100px;
+    font-family: 'Work Sans', sans-serif;
+    .header {
+        padding: 20px;
+        margin-bottom: 40px;
+        h1 {
+            font-size: 80px;
+            color: $green-theme;
+            margin-bottom: 20px;
+        }
+    }
+    .selector {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        > div:first-child {
+            p {
+                font-family: 'Staatliches', cursive;
+                font-size: 14px;
+                color: red;
+                margin-left: 10px;
+            }
+        }
+        > div:last-child {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            button {
+                margin-left: 10px;
+                width: 50px;
+                display: flex;
+                height: 50px;
+                padding: 0;
+                background: #d2d2d2;
+                justify-content: center;
+                align-items: center;
+                i {
+                    text-align: center;
+                    color: white;
+                    font-size: 30px;
+                }
+                &.active {
+                    i {
+                        color: #0000005c;
+                    }
+                }
+            }
+        }
+    }
+
+    @supports(display: grid) {
+        .grid-container {
+            width: 100%;
+            overflow: hidden;
+            .grid-item {
+                grid-area: main;
+                padding: 0;
+                overflow: hidden;
+                .items {
+                    position: relative;
+                    width: 100%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    will-change: transform;
+                    user-select: none;
+                    cursor: pointer;
+                    .item {
+                        font-family: 'Staatliches', cursive;
+                        width: 400px;
+                        height: 50vh;
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        display: inline-block;
+                        position: relative;
+                        .desc {
+                            background-color: #0000004a;
+                            width: 360px;
+                            padding: 10px;
+                            position: absolute;
+                            display: flex;
+                            flex-direction: column-reverse;
+                            bottom: 10px;
+                            left: 10px;
+                            p {
+                                font-size: 30px;
+                                color: white;
+                            }
+
+                            h1 {
+                                color: white;
+                                white-space: normal;
+                                font-size: 45px;
+                            }
+                        }
+                    }
+                }
+                .items.active {
+                    cursor: grabbing;
+                    cursor: -webkit-grabbing;
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+
+    .list-container {
+        display: flex;
+        width: 100%;
+        .grid-item {
+            width: 100%;
+            .items {
+                .item {
+                    height: 300px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    margin-bottom: 20px;
+                    position: relative;
+                    .desc {
+                        font-family: 'Staatliches', cursive;
+                        bottom: 10px;
+                        left: 10px;
+                        position: absolute;
+                        h1 {
+                            font-size: 45px;
+                        }
+                        p {
+                            color: white;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

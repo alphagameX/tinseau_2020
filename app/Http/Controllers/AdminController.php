@@ -30,4 +30,8 @@ class AdminController extends Controller
             )
         ));
     }
+
+    public function settingsField() {
+        return view('admin.settings-field');
+    }
 }

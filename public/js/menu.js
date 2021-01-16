@@ -8,20 +8,32 @@ window.addEventListener('scroll', (e) => {
 })
 
 function isScrolledNavbar(el) {
-    if(window.scrollY >= 50 || window.location.href !== window.location.origin + '/') {
+
+    console.log()
+
+    if(window.scrollY >= 50 ||
+        window.location.href !== window.location.origin + '/' &&
+        window.location.href !== window.location.origin + '/login') {
         el.className = 'navbar'
     }else {
         el.removeAttribute('class')
     }
 }
 
-/*DROPDOWN*/
-let menuBtn = menu.querySelector('.right button');
-menuBtn.addEventListener('click', () => {
-    let dropdown = document.querySelector('.right ul')
-    if(dropdown.className.includes('active')) {
-        dropdown.removeAttribute('class')
-    } else {
-        dropdown.className = 'active'
+let overlayBtn = document.querySelector('header .right button')
+let overlay = document.querySelector('.overlay')
+let closeBtn = document.querySelector('.overlay .close')
+
+overlayBtn.addEventListener('click', () => {
+    overlay.style.opacity = '1'
+    overlay.style.pointerEvents = 'all'
+    overlay.querySelector('.panel').classList.add('on-screen')
+})
+
+overlay.addEventListener('click', (e) => {
+    if(e.target.className.includes('overlay') || e.target.className.includes('fas')) {
+        overlay.removeAttribute('style')
+        overlay.querySelector('.panel').classList.remove('on-screen')
     }
 })
+
